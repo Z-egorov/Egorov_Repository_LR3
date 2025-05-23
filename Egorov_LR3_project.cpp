@@ -36,8 +36,16 @@ int main() {
 }
 
 
-void inputNumber() {
-    // Здесь будет реализация ввода числа
+void inputNumber(double& a) {
+    do {
+        cout << "Введите положительное число A: ";
+        cin >> a;
+        if(a <= 0) {
+            cout << "Ошибка: число должно быть положительным!" << endl;
+        }
+    } while(a <= 0);
+    cout << "Число успешно сохранено: A = " << a << endl;
+
 }
 
 void calculateArea() {
