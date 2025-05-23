@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 
@@ -53,8 +54,9 @@ void calculateArea(double a) {
     cout << "Площадь равностороннего треугольника со стороной " << a << " = " << area << endl;
 }
 
-void calculatePerimeter() {
-    // Здесь будет расчет периметра треугольника
+void calculatePerimeter(double a) {
+    double perimeter = 3 * a;
+    cout << "Периметр равностороннего треугольника со стороной " << a << " = " << perimeter << endl;
 }
 
 void displayMenu() {
