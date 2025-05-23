@@ -48,8 +48,9 @@ void inputNumber(double& a) {
 
 }
 
-void calculateArea() {
-    // Здесь будет расчет площади треугольника
+void calculateArea(double a) {
+    double area = (a * a * sqrt(3)) / 4;
+    cout << "Площадь равностороннего треугольника со стороной " << a << " = " << area << endl;
 }
 
 void calculatePerimeter() {
